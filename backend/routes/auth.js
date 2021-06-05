@@ -1,0 +1,1 @@
+// tempo do video 17:38 
