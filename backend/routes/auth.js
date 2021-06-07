@@ -3,7 +3,7 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
 //Register
-router.post("/registrar", async(req, res) => {
+router.post("/register", async(req, res) => {
   try{
     const salt = await bcrypt.genSalt(10);
     const hashedPass = await bcrypt.hash(req.body.password, salt);
@@ -18,7 +18,7 @@ router.post("/registrar", async(req, res) => {
   } catch(err) {
     res.status(500).json(err);
   }
-})
+});
 
 //Login
 router.post("/login", async(req, res) => {
@@ -34,7 +34,7 @@ router.post("/login", async(req, res) => {
   }catch(err) {
     res.status(500).json(err);
   }
-})
+});
 
 // 29:55  https://www.youtube.com/watch?v=OML9f6LXUUs
 module.exports = router;
