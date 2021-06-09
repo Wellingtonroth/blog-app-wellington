@@ -3,9 +3,15 @@
     <header class="main-header">
 
       <router-link 
-        class="main-header-resume"
+        class="main-header-link"
         to="/curriculo">
         Experiências
+      </router-link>
+
+      <router-link 
+        class="main-header-link"
+        to="/blog">
+        Blog
       </router-link>
       
       <i class="icon icon-2x icon-apps main-header-hamburguer"></i>
@@ -55,7 +61,7 @@
   padding: 0 12px;
 }
 
-.main-header-resume {
+.main-header-link {
   color: #000;
   margin-right: 20px;
 }

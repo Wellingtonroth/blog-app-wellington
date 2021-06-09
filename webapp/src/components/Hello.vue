@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <h1 class="home-title">Wellington</h1> -->
     <img src="../assets/img/Wellington.png" alt="Wellington Roth">
     <div class="home-text">
       <p class="home-text-paragraph typing-animation">Olá, meu nome é Wellington e sou programador Frontend. =)</p>

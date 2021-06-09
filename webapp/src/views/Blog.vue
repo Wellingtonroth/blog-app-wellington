@@ -1,5 +1,5 @@
 <template>
   <div>
-    experienciaaaaaaaa
+    Blog
   </div>
 </template>
