@@ -1,14 +1,17 @@
 <template>
-  <section class="container">
-    <Hello />
-    <div class="buttons">
-      <ButtonHome msg="Desenvolvedor Frontend" />
-      
-      <router-link to="/contato">
-        <ButtonHome msg="Estou com Sorte" />
-      </router-link>
-    </div>
-  </section>
+  <div class="container">
+    <section class="section">
+      <Hello />
+
+      <div class="buttons">
+        <ButtonHome msg="Desenvolvedor Frontend" />
+        
+        <router-link to="/contato">
+          <ButtonHome msg="Estou com Sorte" />
+        </router-link>
+      </div>
+    </section>
+  </div>
 </template>
 .
 <script>
@@ -27,8 +30,9 @@ export default {
 <style scoped>
 .container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+}
+
+.section {
   margin: 0 auto;
   min-width: 514px;
 }
