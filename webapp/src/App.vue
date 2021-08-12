@@ -1,36 +1,41 @@
 <template>
-  <div class="main">
-    <Header />
+  <div>
+    <Navigation />
 
-    <router-view/>
+    <router-view />
 
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
-
+import Navigation from "./components/shared/Navigation.vue";
+import Footer from "./components/shared/Footer.vue";
 
 export default {
+  name: 'Home',
   components: {
-    Header,
-    Footer
-  }
+    Navigation,
+    Footer,
+  },
+  setup() {
+  },
 }
-
+//#011526
+//#023859
+//#0339A6
+//#034AA6
+//#4480A6
+// FAFAF8 cor do footer
+// 848484 cor de bordas
 </script>
 
-
-<style scoped>
-.main {
-  display: flex;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 100%;
+<style>
+body, #app {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-
 </style>

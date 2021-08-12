@@ -1,5 +1,0 @@
-<template>
-  <div>
-    experienciaaaaaaaa
-  </div>
-</template>
