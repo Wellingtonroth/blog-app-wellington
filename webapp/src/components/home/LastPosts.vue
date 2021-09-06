@@ -1,0 +1,95 @@
+<template>
+  <div class="last-posts">
+    <h1 class="title">Últimos posts</h1>
+
+    <div class="box">
+      <div class="post">
+        <div class="image"></div>
+        <div class="post-details">
+          <h2 class="post-title">Título do post</h2>
+          <p class="description">desacriçãodesa criçãodesacriçãodesacriçãodesacriçãodesacriçã</p>
+          <div>
+            <span class="tag">CSS</span>
+            <span class="tag">HTML</span>
+            <span class="tag">Javascript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="image"></div>
+        <div class="post-details">
+          <h2 class="post-title">Título do post</h2>
+          <p class="description">desacriçãodesa criçãodesacriçãodesacriçãodesacriçãodesacriçã</p>
+          <div>
+            <span class="tag">CSS</span>
+            <span class="tag">HTML</span>
+            <span class="tag">Javascript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'LastPosts',
+}
+</script>
+
+<style scoped>
+.title {
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 280px;
+  height: 154px;
+  background: rgb(180, 180, 180);
+  margin-right: 24px;
+}
+
+.last-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.post {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.post-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.post-title {
+  font-size: 1.125rem;
+}
+
+.description {
+  max-width: 205px;
+  font-size: 1.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag {
+  text-transform: uppercase;
+  color: #023859;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-right: 20px;
+}
+</style>

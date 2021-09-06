@@ -1,16 +1,28 @@
 <template>
-  <div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="section">
+    <Avatar />
+    <LastPosts />
+  </section>
 </template>
 
 <script>
-import HelloWorld from '@/components/home/HelloWorld.vue'
+import Avatar from '@/components/home/Avatar.vue'
+import LastPosts from '@/components/home/LastPosts.vue'
 
 export default {
-  name: 'Home',
+  name: 'HomePage',
   components: {
-    HelloWorld
+    Avatar,
+    LastPosts
   }
 }
 </script>
+
+<style scoped>
+.section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+</style>

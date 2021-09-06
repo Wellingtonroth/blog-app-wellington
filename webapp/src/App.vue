@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <Navigation />
 
     <router-view />
@@ -21,21 +21,37 @@ export default {
   setup() {
   },
 }
-//#011526
-//#023859
-//#0339A6
-//#034AA6
-//#4480A6
-// FAFAF8 cor do footer
-// 848484 cor de bordas
 </script>
 
 <style>
-body, #app {
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-decoration: none;
+  outline: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  font: 400 14px Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+input, button, textarea {
+  font: 400 18px "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 </style>
