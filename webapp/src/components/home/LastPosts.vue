@@ -28,6 +28,7 @@
           </div>
         </div>
       </div>
+      <a class="see-more" href="/posts">Ver mais</a>
     </div>
   </div>
 </template>
@@ -38,58 +39,65 @@ export default {
 }
 </script>
 
-<style scoped>
-.title {
-  font-weight: normal;
-  margin-bottom: 24px;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-}
-
-.image {
-  width: 280px;
-  height: 154px;
-  background: rgb(180, 180, 180);
-  margin-right: 24px;
-}
-
+<style scoped lang="scss">
 .last-posts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-}
 
-.post {
-  display: flex;
-  margin-bottom: 24px;
-}
+  .title {
+    font-weight: normal;
+    margin-bottom: 24px;
+  }
 
-.post-details {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 
-.post-title {
-  font-size: 1.125rem;
-}
+    .post {
+      display: flex;
+      margin-bottom: 24px;
 
-.description {
-  max-width: 205px;
-  font-size: 1.125rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+      .image {
+        width: 280px;
+        height: 154px;
+        background: rgb(180, 180, 180);
+        margin-right: 24px;
+      }
 
-.tag {
-  text-transform: uppercase;
-  color: #023859;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding-right: 20px;
+      .post-details {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .post-title {
+          font-size: 1.125rem;
+        }
+
+        .description {
+          max-width: 205px;
+          font-size: 1.125rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .tag {
+          text-transform: uppercase;
+          color: #023859;
+          font-size: 0.875rem;
+          font-weight: 500;
+          padding-right: 20px;
+        }
+      }
+    }
+    .see-more {
+      display: flex;
+      font-size: 0.875rem;
+      justify-content: flex-end;
+      color: #000;
+    }
+  }
 }
 </style>

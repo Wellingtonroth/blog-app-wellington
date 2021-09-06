@@ -5,7 +5,6 @@
       src="../../images/avatar.png" 
       alt="Avatar Wellington Roth" 
     >
-    <p class="title">Desenvolvedor Front-end</p>
   </div>
 </template>
 
@@ -19,18 +18,13 @@ export default {
 .box {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  justify-content: flex-end;
+  width: 40%;
+  margin-right: 50px;
 
   .avatar {
-    width: 242px;
-    height: 250px;
-  }
-
-  .title {
-    font-size: 1.5rem;
-    font-weight: 500;
+    width: 290px;
+    height: 300px;
   }
 }
 </style>

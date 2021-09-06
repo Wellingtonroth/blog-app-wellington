@@ -54,42 +54,42 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .footer {
   display: flex;
   padding: 0 38px;
   flex-direction: column;
-}
 
-.border {
-  border-top: 1px solid #023859;
-  width: 86%;
-  height: 0px;
-  margin: auto;
-}
+  .border {
+    border-top: 1px solid #023859;
+    width: 86%;
+    height: 0px;
+    margin: auto;
+  }
 
-.box {
-  display: flex;
-  justify-content: space-between;
-}
+  .box {
+    display: flex;
+    justify-content: space-between;
 
-.box-logo {
-  display: flex;
-  align-items: center;
-}
+    .box-logo {
+      display: flex;
+      align-items: center;
 
-.copyright {
-  font-size: 1rem;
-  padding-left: 18px;
-}
+      .copyright {
+        font-size: 1rem;
+        padding-left: 18px;
+      }
+    }
 
-.social-links {
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
-}
+    .social-links {
+      display: flex;
+      align-items: center;
+      padding-right: 20px;
 
-.link:not(:last-child) {
-  margin-right: 32px;
+      .link:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
 }
 </style>

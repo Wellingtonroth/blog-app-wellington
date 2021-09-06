@@ -26,31 +26,31 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .nav {
   display: flex;
   justify-content: space-between;
   padding: 0 38px;
-}
 
-.buttons {
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
-}
+  .buttons {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
 
-.link:not(:last-child) {
-  margin-right: 44px;
-}
+    .link {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000000;
+    }
 
-.link {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000000;
-}
+    .link:not(:last-child) {
+      margin-right: 44px;
+    }
 
-.router-link-exact-active {
-  color: #023859;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    .router-link-exact-active {
+      color: #023859;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
 }
 </style>
