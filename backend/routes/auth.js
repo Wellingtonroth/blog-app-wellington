@@ -36,5 +36,4 @@ router.post("/login", async(req, res) => {
   }
 });
 
-// 29:55  https://www.youtube.com/watch?v=OML9f6LXUUs
 module.exports = router;
