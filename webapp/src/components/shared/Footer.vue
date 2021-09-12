@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="border" />
 
     <div class="box">
@@ -43,7 +43,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>

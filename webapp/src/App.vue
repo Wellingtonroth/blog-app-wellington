@@ -18,8 +18,6 @@ export default {
     Navigation,
     Footer,
   },
-  setup() {
-  },
 }
 </script>
 
