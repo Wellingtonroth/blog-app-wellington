@@ -1,16 +1,13 @@
 <template>
   <div class="posts">
-    <div class="box-post" v-for="(post, i) in posts" :key="i">
-      <h1 class="title">a</h1>
+    <div class="box-post" v-for="post in posts" :key="post._id">
+      <h1 class="title">{{ post.title }}</h1>
       <div class="tags">
-        <span class="tag">CSS</span>
-        <span class="tag">HTML</span>
-        <span class="tag">Javascript</span>
+        <span class="tag" v-for="categorie in categories" :key="categorie._id">{{ categorie.name }}</span>
       </div>
       <p class="description">
-        desacriçãodesa criçãodesacriçãode sacriçãodesacriçãodesacriçdesacriçãodesa criçãodesacriç ãodesacriçã odesacriçãodesa criçdesacriçãodesa 
-        criçãodesacriçãodesac riçãodesacriçãodesacri çdesacriçãodesa criçãodesacriçãodesac riçãodesacriçãodesacriç
-      </p>  
+        {{ post.desc }}
+      </p>
     </div>
   </div>
 </template>
@@ -25,19 +22,21 @@ export default {
     const store = useStore();
 
     const posts = ref({});
+    const categories = ref({});
 
     const loadPosts = async () => {
       posts.value = await store.dispatch('posts/getAllPosts');
+      categories.value = await store.dispatch('categories/getAllCategories');
     };
 
     loadPosts();
 
-    console.log(posts.value);
     return {
       posts,
+      categories,
     };
   },
-  emits: ['loadPosts', 'posts']
+  emits: ['loadPosts', 'posts', 'categories']
 };
 </script>
 

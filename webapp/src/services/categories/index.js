@@ -1,7 +1,9 @@
-import { api } from '../axios'
+import api from '../axios'
+import baseUrl from '../baseUrl'
 
 export default {
   getCategories: () => {
-    return api.get("categories")
+    return api.get(baseUrl.categories.getCategories)
+      .then(res => res.data);
   }
 }

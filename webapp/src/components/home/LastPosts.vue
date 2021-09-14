@@ -34,8 +34,30 @@
 </template>
 
 <script>
+import { useStore } from 'vuex'
+import { ref } from 'vue';
+
 export default {
   name: 'LastPosts',
+  setup() {
+    const store = useStore();
+
+    const posts = ref({});
+    const categories = ref({});
+
+    const loadPosts = async () => {
+      posts.value = await store.dispatch('posts/getAllPosts');
+      categories.value = await store.dispatch('categories/getAllCategories');
+    };
+
+    loadPosts();
+
+    return {
+      posts,
+      categories,
+    };
+  },
+  emits: ['loadPosts', 'posts', 'categories']
 }
 </script>
 
